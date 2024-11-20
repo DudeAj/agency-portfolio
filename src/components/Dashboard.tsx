@@ -25,7 +25,7 @@ const Dashboard = () => {
           <Button>Get this Template</Button>
         </div>
         <div className="mt-14">
-          <Stars />
+          <Stars count={5} />
         </div>
         <p className="text-xl mt-3 text-neutral-dark w-1/2 text-center font-semibold">
           4.9/5 From 3,602 Customers
