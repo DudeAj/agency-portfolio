@@ -42,9 +42,7 @@ export default {
         'neutral-medium': 'rgb(196, 200, 212)', // --token-1b8625e0-13ce-4d73-8156-ae8786fbff1f
         'neutral-dark': 'rgb(167, 173, 190)', // --token-5290a3f4-c858-4df7-b4b0-ea87535a1ae5
       },
-      fontFamily: {
-        'sans': ['Helvetica', 'Arial', 'sans-serif'],
-      },
+      
     },
   },
   plugins: [],

@@ -3,6 +3,7 @@ import React from "react";
 import { TestimonialCard } from "./TestimonialsCard";
 import { testimonialData } from "../../constants";
 import Slider from "react-slick";
+import { text } from "stream/consumers";
 
 const Testimonials: React.FC = () => {
   const settings = {
@@ -19,7 +20,7 @@ const Testimonials: React.FC = () => {
       <div className="w-10/12">
         <Slider {...settings}>
           {testimonialData.map((test) => (
-            <TestimonialCard {...test} />
+            <TestimonialCard key={test.quote} {...test} />
           ))}
         </Slider>
       </div>
