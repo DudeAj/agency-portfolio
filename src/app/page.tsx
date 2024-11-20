@@ -1,101 +1,170 @@
-import Image from "next/image";
+import Header from "../components/Header";
+import Dashboard from "../components/Dashboard";
+import HowWeHelp from "../components/HowWeHelp";
+import OurMission from "../components/OurMission";
+import Footer from "../components/Footer";
+import WhyUsSection from "../components/WhyUsSection";
+import WhyAriseStandsOut from "../components/WhyAriseStandsOut";
+import CardSection from "../components/CardSection";
+import { features, projects, tools } from "../constants";
+import AboutUs from "../components/AboutUs";
+import DesignProcessCard from "../components/DesignProcessCard";
+import PortfolioCard from "../components/PortfolioCard";
+import Insights from "../components/Insights";
+import ComparisonSection from "../components/ComparisonSection";
+import WebDesignContainer from "../components/WebDesign";
+import PricingSection from "../components/PricingSection";
+import Performance from "../components/Performance";
+import Testimonials from "../components/Testimonials";
+import { FAQSection } from "../components/FaqSection";
+import ProjectSection from "../components/ProjectSection";
 
-export default function Home() {
+function App() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="">
+      <Header />
+      <Dashboard />
+      <HowWeHelp />
+      <OurMission />
+      <WhyUsSection
+        data={{
+          tag: "Why Us",
+          heading: "Why Arise Stands Out",
+          description:
+            "Discover why Arise excels in delivering innovative, client-focused web design solutions.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
+      <WhyAriseStandsOut />
+      <WhyUsSection
+        data={{
+          tag: "Process",
+          heading: "Our Design Process",
+          description:
+            "Explore our streamlined approach to creating bespoke websites that align with your goals.",
+          bgImage:
+            "https://framerusercontent.com/images/IJB1pgcBugatOTAc7yAHhqLQu0.svg",
+        }}
+      />
+      <CardSection
+        Card={DesignProcessCard}
+        columns={2}
+        gap={8}
+        features={features}
+      />
+      <AboutUs />
+      <WhyUsSection
+        data={{
+          tag: "Tools",
+          heading: "Tools We Utilize for Excellence",
+          description:
+            "Discover the advanced tools and technologies we leverage to create cutting-edge websites.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
+      <CardSection
+        Card={DesignProcessCard}
+        titleWithIcon
+        columns={3}
+        gap={4}
+        features={tools}
+      />
+      <WhyUsSection
+        data={{
+          tag: "Works",
+          heading: "Explore Our Recent Projects",
+          description:
+            "Browse through our portfolio showcasing diverse, innovative web design projects and client successes.",
+          bgImage:
+            "https://framerusercontent.com/images/IJB1pgcBugatOTAc7yAHhqLQu0.svg",
+        }}
+      />
+      {/* Recent Projects Components */}
+      <CardSection
+        Card={PortfolioCard}
+        titleWithIcon
+        columns={2}
+        gap={8}
+        features={projects}
+      />
+      {/* insights */}
+      <Insights
+        data={{
+          tag: "Industry Insights",
+          heading: "Website Design Impacts Customer Retention",
+          description:
+            "Capture and retain more customers by optimizing your website's design for engagement.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <WhyUsSection
+        data={{
+          tag: "Comparison",
+          heading: "Choosing Arise Over Others",
+          description:
+            "See why Arise stands out with superior service, innovation, and client satisfaction benchmarks.",
+          bgImage:
+            "https://framerusercontent.com/images/IJB1pgcBugatOTAc7yAHhqLQu0.svg",
+        }}
+      />
+      {/* Comparision Component */}
+      <ComparisonSection />
+      <WhyUsSection
+        data={{
+          tag: "Services",
+          heading: "Explore Our Core Services",
+          description:
+            "Discover our comprehensive range of services tailored to enhance your digital presence.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
+      {/* Services Component */}
+      <WebDesignContainer />
+      <WhyUsSection
+        data={{
+          tag: "Pricing",
+          heading: "Transparent Pricing Options",
+          description:
+            "Explore our competitive pricing plans designed to meet diverse business needs and budgets.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
+      <PricingSection />
+      <Performance />
+      {/* Results */}
+      <WhyUsSection
+        data={{
+          tag: "Testimonials",
+          heading: "Client Success Stories",
+          description:
+            "Discover what our clients say about their experiences and success working with us.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
+      <Testimonials />
+      {/* Testimonials */}
+      <WhyUsSection
+        data={{
+          tag: "FAQ's",
+          heading: "Frequently Asked Questions",
+          description:
+            "Answers to common questions about our services, processes, and what sets us apart.",
+          bgImage:
+            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+        }}
+      />
+      <FAQSection />
+      <ProjectSection/>
+      <Footer />
     </div>
   );
 }
+
+export default App;
