@@ -51,7 +51,8 @@ export interface TestimonialProps {
 
 export interface FAQItemProps {
   question: string;
-  iconSrc: string;
+
+  answer: string;
 }
 
 export interface QuestionButtonProps {

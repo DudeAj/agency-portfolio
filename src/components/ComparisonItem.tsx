@@ -3,20 +3,13 @@ import AngleStarIcon from "../Icons/AngleStarIcon";
 import LightningIcon from "../Icons/LightningIcon";
 
 interface ComparisonItemProps {
-  otherAgencies: {
-    icon: string;
-    text: string;
-  };
-  ourAgency: {
-    icon: string;
+  comparisonData: {
+    icon: JSX.Element;
     text: string;
   };
 }
 
-const ComparisonItem: React.FC<ComparisonItemProps> = ({
-  otherAgencies,
-  ourAgency,
-}) => {
+const ComparisonItem: React.FC<ComparisonItemProps> = ({ comparisonData }) => {
   return (
     <div className="flex mt-5 overflow-hidden w-full rounded-2xl border border-solid border-slate-900">
       <div className="flex w-[96%] relative flex-col md:flex-row items-center gap-1.5 p-3 text-lg font-medium text-gray-400 min-h-[63px]">
@@ -26,18 +19,18 @@ const ComparisonItem: React.FC<ComparisonItemProps> = ({
           alt=""
           className="object-cover absolute right-0"
         />
-        <AngleStarIcon />
-        <p className="">{otherAgencies.text}</p>
+        {/* <AngleStarIcon /> */}
+        {comparisonData.icon}
+        <p className="">{comparisonData.text}</p>
       </div>
       <div className="flex w-full bg-slate-950 gap-1.5 overflow-hidden">
         <div className="flex items-center overflow-hidden gap-5 py-4 pl-2.5">
           <div className="flex self-start w-px bg-blue-600 h-[34px] rounded-[42px]" />
-          <LightningIcon />
+          {/* <LightningIcon /> */}
+          {comparisonData.icon}
         </div>
         <div className="flex items-center">
-          <p className="flex-auto text-lg font-semibold text-slate-300">
-            {ourAgency.text}
-          </p>
+          <p className="text-slate-300">{comparisonData.text}</p>
         </div>
       </div>
     </div>

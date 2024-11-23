@@ -21,8 +21,8 @@ const AboutUs: React.FC = () => {
 
   return (
     <section className="flex justify-center mt-32">
-      <div className="flex w-10/12 gap-5 max-md:flex-col">
-        <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+      <div className="flex flex-col lg:flex-row w-10/12 md:w-10/12 gap-5">
+        <div className="flex flex-col w-full lg:w-6/12 ">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/dab94dee6c647b6db4cfda9cc764a2a905396bf195e1be1b3e1cd15fb9bef067?placeholderIfAbsent=true&apiKey=5c8487259d2544f6b6ebf5c939fd2123"
@@ -30,8 +30,8 @@ const AboutUs: React.FC = () => {
             className="object-contain grow w-full rounded-3xl aspect-[1.19] max-md:mt-10 "
           />
         </div>
-        <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-          <div className="flex flex-col self-stretch my-auto w-full max-md:mt-10 ">
+        <div className="flex flex-col ml-0 lg:ml-5 w-full lg:w-6/12">
+          <div className="flex flex-col self-stretch my-auto w-full ">
             <Tag className="text-lg">About Us</Tag>
             <AboutUsContent />
             <div className="flex flex-col mt-8 w-full text-base rounded-2xl bg-slate-950 ">
@@ -51,7 +51,7 @@ const AboutUs: React.FC = () => {
                           alt=""
                           className="object-contain shrink-0 rounded-xl aspect-square"
                         />
-                        <div className="flex shrink-0 self-stretch w-px bg-indigo-950 " />
+                        <div className="shrink-0 hidden lg:flex self-stretch w-px bg-indigo-950 " />
                       </>
                     )}
                   </React.Fragment>

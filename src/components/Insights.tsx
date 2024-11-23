@@ -8,7 +8,7 @@ interface Props {
 const Insights: React.FC<Props> = ({ data }) => {
   return (
     <section className="flex gap-5 justify-center w-full text-lg font-medium text-neutral-dark max-md:max-w-full">
-      <div className="flex overflow-hidden relative flex-col items-center px-20 pt-28 pb-12 my-auto min-h-[320px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
+      <div className="flex overflow-hidden relative flex-col items-center px-12 md:px-20 mt-12 md:pt-28 pb-4 md:pb-12 my-auto min-h-[320px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
         <img
           loading="lazy"
           src={data.bgImage}
@@ -17,10 +17,10 @@ const Insights: React.FC<Props> = ({ data }) => {
         />
         <div className="flex relative flex-col items-center max-w-full w-auto">
           <p className="rounded-full p-2 px-4 text-lg">{data.tag}</p>
-          <h2 className="mt-7 text-6xl w-3/5 font-semibold leading-tight text-center text-white">
+          <h2 className="mt-7 text-4xl md:text-6xl w-full md:w-4/5 lg:w-3/5 font-semibold leading-tight text-center text-white">
             {data.heading}
           </h2>
-          <p className="mt-4 text-center max-md:max-w-full max-w-9/12 w-2/5">
+          <p className="mt-4 text-center max-w-9/12 w-full md:w-4/5 lg:w-2/5">
             {data.description}
           </p>
           <Button className="mt-12">Start a Project</Button>

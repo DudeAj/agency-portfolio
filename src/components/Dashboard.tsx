@@ -15,7 +15,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="flex flex-col items-center mt-5">
-        <p className="text-6xl text-white w-1/2 text-center font-semibold leading-snug">
+        <p className="text-4xl md:text-6xl text-white w-11/12 md:w-1/2 text-center font-semibold leading-snug">
           Best Template to Elavate Your Tech Business
         </p>
         <p className="text-lg mt-3 text-neutral-dark w-1/2 text-center font-semibold">

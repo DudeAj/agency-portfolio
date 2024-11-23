@@ -3,6 +3,7 @@ import { StarRating } from "../ui/StartRating";
 import { TestimonialAuthor } from "./Author";
 import { TestimonialProps } from "../../types";
 import Stars from "../ui/Stars";
+import Testimonialbg from "@/assets/Testimonialbg";
 
 export const TestimonialCard: React.FC<TestimonialProps> = ({
   quote,
@@ -10,14 +11,15 @@ export const TestimonialCard: React.FC<TestimonialProps> = ({
   author,
 }) => {
   return (
-    <section className="border border-dark-blue-2 flex overflow-hidden relative flex-col items-center self-stretch px-20 py-20 mt-12 w-full rounded-3xl min-h-[416px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-      <img
+    <section className="border border-dark-blue-2 bg-utility-dark-blue flex overflow-hidden relative flex-col items-center self-stretch px-20 py-20 mt-12 w-full rounded-3xl min-h-[416px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      {/* <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/0e2a9c26f8ea94f60ed62529b2cd77e6d7a9953e0e531c1ae370b995d24a5ac4?placeholderIfAbsent=true&apiKey=5c8487259d2544f6b6ebf5c939fd2123"
         alt=""
         className="object-cover absolute inset-0 size-full"
-      />
-      <div className="flex relative flex-col items-center w-full max-w-[678px] max-md:max-w-full">
+      /> */}
+      {/* <Testimonialbg/> */}
+      <div className="flex  relative flex-col items-center w-full max-w-[678px] max-md:max-w-full">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a8180ce35bc0aea6303880c23fe8e33ae217f05fa39c5926b0d1846d7194c8f?placeholderIfAbsent=true&apiKey=5c8487259d2544f6b6ebf5c939fd2123"

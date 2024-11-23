@@ -14,11 +14,11 @@ const AboutUsContent: React.FC = () => {
         solutions. Our mission is to empower businesses with innovative websites
         that not only captivate but also drive results.
       </p>
-      <div className="flex gap-4 self-start mt-6">
-        <Button endIcon={<ExternalLinkIcon />}>Contact Us</Button>
+      <div className="flex w-full flex-col items-center md:flex-row gap-4 self-start mt-6">
+        <Button className="w-full md:w-auto flex justify-center" endIcon={<ExternalLinkIcon />}>Contact Us</Button>
         <Button
           endIcon={<ExternalLinkIcon />}
-          className="bg-dark-blue border border-dark-blue-2"
+          className="bg-dark-blue w-full md:w-auto flex justify-center border border-dark-blue-2"
         >
           View Projects
         </Button>

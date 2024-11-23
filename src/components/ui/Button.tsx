@@ -22,7 +22,7 @@ const Button: React.FC<PropsWithChildren<Props>> = ({
       whileDrag={{ scale: 0.9, rotate: 10 }}
       initial={{ scale: 1, rotate: 0 }} // Ensures it starts in the original state
       animate={{ scale: 1, rotate: 0 }} // Resets to the original state after interactionß
-      className={`border-button flex gap-1 text-white px-5 py-3.5 rounded-full bg-deep-blue ${className} ${
+      className={`border-button flex justify-center gap-1 text-white px-5 py-3.5 rounded-full ${className} bg-deep-blue ${
         small ? "text-xs" : "text-lg"
       }`}
     >

@@ -5,8 +5,8 @@ import OtherServices from "../OtherServices";
 const WebDesignContainer = () => {
   return (
     <section className="flex justify-center py-10">
-      <div className="w-10/12 ">
-        <div className="flex gap-8">
+      <div className="w-11/12 md:w-10/12 ">
+        <div className="flex flex-col lg:flex-row gap-8">
           {services.map((feature) => (
             <WebDesignCard
             key={feature.title}

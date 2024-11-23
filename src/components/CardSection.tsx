@@ -18,8 +18,8 @@ const CardSection: React.FC<CardSectionProps> = ({
 }) => {
   return (
     <section className="flex mt-10 justify-center">
-      <div className="z-10 w-10/12 self-center mt-0">
-        <div className={`grid grid-cols-${columns} gap-${gap}`}>
+      <div className="z-10 w-11/12 lg:w-10/12 self-center mt-0">
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-${columns} gap-3 md:gap-${gap}`}>
           {features.map((feature, index) => (
             <Card titleWithIcon={titleWithIcon} key={index} {...feature} />
           ))}

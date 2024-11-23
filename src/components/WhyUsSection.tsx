@@ -8,7 +8,7 @@ const WhyUsSection: React.FC<Props> = ({ data }) => {
   return (
     <section className="flex gap-5 justify-center w-full mt-10 text-lg font-medium text-neutral-dark max-md:max-w-full">
       {/* <WhyUsLeft /> */}
-      <div className="flex overflow-hidden relative flex-col items-center px-20 pt-28 pb-12 my-auto min-h-[320px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
+      <div className="flex overflow-hidden relative flex-col items-center px-20 pt-12 md:pt-28 pb-12 my-auto min-h-[320px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
         <img
           loading="lazy"
           src={data.bgImage}

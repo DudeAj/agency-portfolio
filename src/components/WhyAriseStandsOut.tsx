@@ -49,8 +49,8 @@ const features: Feature[] = [
 const WhyAriseStandsOut: React.FC = () => {
   return (
     <section className="flex mt-10 justify-center">
-      <div className="z-10 w-10/12 self-center mt-0 max-w-[1260px] max-md:max-w-full">
-        <div className="grid grid-cols-3 gap-8">
+      <div className="z-10 w-11/12 md:w-10/12 self-center mt-0 max-w-[1260px] max-md:max-w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-8">
           {features.map((feature, index) => (
             <FeatureCard key={index} {...feature} />
           ))}

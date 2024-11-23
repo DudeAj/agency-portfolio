@@ -4,11 +4,11 @@ import Button from "./ui/Button";
 const Header = () => {
   return (
     <div className="flex justify-center p-8">
-      <div className="flex w-10/12 items-center justify-between rounded-full">
+      <div className="flex w-10/12 border md:border-none border-dark-blue items-center justify-between rounded-full">
         <div className="">
           <Logo />
         </div>
-        <div className="border border-dark-blue bg-utility-deeper-blue rounded-full ">
+        <div className="border md:flex hidden border-dark-blue bg-utility-deeper-blue rounded-full ">
           <ul className="flex w-full justify-evenly p-2 text-lg">
             <li className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">About</li>
             <li className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">Works</li>

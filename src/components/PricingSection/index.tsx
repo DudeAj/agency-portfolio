@@ -52,7 +52,7 @@ const PricingSection = () => {
 
   return (
     <div className="flex mt-6 justify-center">
-      <div className="flex gap-10">
+      <div className="w-11/12 lg:10/12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
         {features2.map((item) => (
           <PricingCard
             {...item}

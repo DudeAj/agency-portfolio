@@ -291,3 +291,47 @@ export const testimonialData = [
     },
   },
 ];
+
+
+export const faqItems = [
+  {
+    question: "What services does Arise offer?",
+    answer: "Arise offers a variety of digital solutions, including web development, SEO, and marketing services.",
+  },
+  {
+    question: "Do you provide hosting services?",
+    answer: "Yes, we offer reliable hosting services tailored to your website's needs.",
+  },
+  {
+    question: "How long does a typical project take?",
+    answer: "The duration of a project varies but typically ranges from 4 to 12 weeks.",
+  },
+  {
+    question: "How do you handle revisions during the process?",
+    answer: "We provide multiple revision cycles to ensure the final output meets your expectations.",
+  },
+  {
+    question: "Do you offer ongoing support after the website launch?",
+    answer: "Yes, we offer maintenance and support packages for post-launch assistance.",
+  },
+  {
+    question: "Can you help with content creation for my website?",
+    answer: "Absolutely, our team can assist with crafting engaging content tailored to your audience.",
+  },
+  {
+    question: "Can I see examples of your previous work?",
+    answer: "Certainly, please visit our portfolio section for examples of our previous projects.",
+  },
+  {
+    question: "Is SEO included in your web design packages?",
+    answer: "Yes, our web design packages include basic SEO to improve your site's visibility.",
+  },
+  {
+    question: "What is your pricing structure like?",
+    answer: "Our pricing is transparent and based on the complexity and requirements of your project.",
+  },
+  {
+    question: "What makes Arise different from other agencies?",
+    answer: "Arise stands out through its personalized approach and commitment to delivering quality.",
+  },
+];

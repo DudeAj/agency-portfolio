@@ -13,7 +13,7 @@ const WebDesignCard: React.FC<WebDesignCardProps> = ({
   return (
     <section className="flex overflow-hidden flex-col w-full rounded-3xl bg-slate-950">
       <div className="flex flex-col p-10 w-full rounded-3xl border border-solid border-slate-900 max-md:px-5 max-md:max-w-full">
-        <header className="flex justify-between gap-10 text-white">
+        <header className="flex flex-col md:flex-row justify-between gap-5 md:gap-10 text-white">
           <h1 className="my-auto text-3xl font-bold leading-tight">{title}</h1>
           <Button className="bg-dark-blue" endIcon={<ExternalLinkIcon />}>{buttonText}</Button>
         </header>

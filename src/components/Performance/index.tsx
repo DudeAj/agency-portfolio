@@ -26,13 +26,13 @@ const data = [
 const Performance: React.FC = () => {
   return (
     <main className="flex justify-center mt-24">
-      <div className="w-10/12 flex gap-5">
-        <section className="grid grid-cols-2 w-6/12 gap-4 py-5">
+      <div className="w-11/12 md:w-10/12 flex flex-col-reverse md:flex-row gap-5">
+        <section className="grid grid-cols-2 w-full md:w-6/12 gap-4 py-5">
           {data.map((item) => {
             return (
               <div className="border bg-utility-dark-blue border-dark-blue-2 py-12 rounded-lg flex justify-center items-center relative">
                 <div className="absolute top-0 left-0 w-full bottom-0">
-                <CardBG />
+                {/* <CardBG /> */}
                 </div>
                 <div>
                   <p className="text-5xl text-center text-white font-bold">
@@ -51,12 +51,12 @@ const Performance: React.FC = () => {
           /> */}
         </section>
 
-        <section className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+        <section className="flex flex-col ml-5 w-full md:w-6/12 max-md:ml-0 max-md:w-full">
           <div className="flex flex-col self-stretch my-auto w-full text-lg font-medium max-md:mt-10 max-md:max-w-full">
             {/* <SectionTitle label="Results & Analytics" /> */}
             <Tag>Results & Analytics</Tag>
-            <h1 className="self-start mt-6 text-5xl font-bold text-white leading-[50px] max-md:max-w-full">
-              Performance Insights and <br /> Analytics Overview
+            <h1 className="self-center text-center md:text-left mt-6 text-5xl font-bold text-white leading-[50px]">
+              Performance Insights and Analytics Overview
             </h1>
 
             <div className="flex flex-wrap gap-3 mt-14 text-center text-zinc-200 max-md:mt-10">

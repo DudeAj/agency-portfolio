@@ -1,16 +1,15 @@
-'use client';
+"use client";
 import React from "react";
 import { TestimonialCard } from "./TestimonialsCard";
 import { testimonialData } from "../../constants";
 import Slider from "react-slick";
-import { text } from "stream/consumers";
 
 const Testimonials: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    arrows: false,
+    arrows: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

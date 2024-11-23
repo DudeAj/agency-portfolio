@@ -12,7 +12,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex flex-col w-full max-md:ml-0 max-md:w-full">
+    <div className="flex flex-col w-full h-full max-md:ml-0 max-md:w-full">
       <div className="flex flex-col w-full rounded-2xl bg-gray-950 max-md:mt-8 relative">
         <img
           loading="lazy"
