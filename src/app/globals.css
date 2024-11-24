@@ -12,3 +12,7 @@ body {
 * {
   font-family: "Rethink Sans", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

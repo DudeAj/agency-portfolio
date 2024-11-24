@@ -30,7 +30,7 @@ const Dashboard = () => {
         <p className="text-xl mt-3 text-neutral-dark w-1/2 text-center font-semibold">
           4.9/5 From 3,602 Customers
         </p>
-        <div className="flex mt-6 gap-2.5">
+        <div className="grid grid-cols-2 md:grid-cols-6 mt-6 gap-2.5">
           {[
             "https://framerusercontent.com/images/7JHrB7AuwYO60K2UwVkMmq4AU.svg",
             "https://framerusercontent.com/images/wYrfdu0osmoL4EAfnxguWtvo.svg",

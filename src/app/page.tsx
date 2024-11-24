@@ -33,7 +33,7 @@ function App() {
           description:
             "Discover why Arise excels in delivering innovative, client-focused web design solutions.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            'https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg',
         }}
       />
       <WhyAriseStandsOut />
@@ -61,7 +61,7 @@ function App() {
           description:
             "Discover the advanced tools and technologies we leverage to create cutting-edge websites.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            "https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg",
         }}
       />
       <CardSection
@@ -97,7 +97,7 @@ function App() {
           description:
             "Capture and retain more customers by optimizing your website's design for engagement.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            "https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg",
         }}
       />
 
@@ -120,7 +120,7 @@ function App() {
           description:
             "Discover our comprehensive range of services tailored to enhance your digital presence.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            "https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg",
         }}
       />
       {/* Services Component */}
@@ -132,7 +132,7 @@ function App() {
           description:
             "Explore our competitive pricing plans designed to meet diverse business needs and budgets.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            "https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg",
         }}
       />
       <PricingSection />
@@ -145,7 +145,7 @@ function App() {
           description:
             "Discover what our clients say about their experiences and success working with us.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            "https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg",
         }}
       />
       <Testimonials />
@@ -157,7 +157,7 @@ function App() {
           description:
             "Answers to common questions about our services, processes, and what sets us apart.",
           bgImage:
-            "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5e1162398d271588d8faaf6c2993016a91fe4aa45d0cba702b1cfb71a9b307?apiKey=5c8487259d2544f6b6ebf5c939fd2123&",
+            "https://framerusercontent.com/images/fXXrEnWUYP7siQQR1XB0guYmQ.svg",
         }}
       />
       <FAQSection />
