@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import Logo from "../Icons/Logo";
 import Button from "./ui/Button";
@@ -6,6 +6,28 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import SmallButton from "./ui/SmallButton";
 
 const Header = () => {
+  const [menus, setMenus] = useState([
+    {
+      label: "About",
+      id: "about",
+    },
+    {
+      label: "Works",
+      id: "works",
+    },
+    {
+      label: "Services",
+      id: "services",
+    },
+    {
+      label: "Design",
+      id: "design",
+    },
+    {
+      label: "Pricing",
+      id: "pricing",
+    },
+  ]);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -18,21 +40,14 @@ const Header = () => {
         {/* Desktop Menu */}
         <div className="border md:flex hidden border-dark-blue bg-utility-deeper-blue rounded-full">
           <ul className="flex w-full justify-evenly p-2 text-lg">
-            <li className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">
-              About
-            </li>
-            <a href="#Works" className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">
-              Works
-            </a>
-            <li className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">
-              Services
-            </li>
-            <li className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">
-              Pricing
-            </li>
-            <li className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer">
-              Features
-            </li>
+            {menus.map((item) => (
+              <a
+                href={`#${item.id}`}
+                className="py-3 px-4 text-neutral-dark hover:text-white hover:cursor-pointer"
+              >
+                {item.label}
+              </a>
+            ))}
           </ul>
         </div>
 
@@ -54,24 +69,19 @@ const Header = () => {
       {menuOpen && (
         <div className="absolute top-28 w-1/3 right-5 bg-utility-dark-blue shadow-lg rounded-lg p-3 md:hidden">
           <ul className="flex flex-col gap-2 text-lg">
-            <li className="px-3 text-neutral-dark hover:text-white hover:bg-dark-blue rounded">
-              About
-            </li>
-            <li className="px-3 text-neutral-dark hover:text-white hover:bg-dark-blue rounded">
-              Works
-            </li>
-            <li className="px-3 text-neutral-dark hover:text-white hover:bg-dark-blue rounded">
-              Services
-            </li>
-            <li className="px-3 text-neutral-dark hover:text-white hover:bg-dark-blue rounded">
-              Pricing
-            </li>
-            <li className="px-3 text-neutral-dark hover:text-white hover:bg-dark-blue rounded">
-              Features
-            </li>
+            {menus.map((item) => (
+              <a
+                href={`#${item.id}`}
+                className="px-3 text-neutral-dark hover:text-white hover:bg-dark-blue rounded"
+              >
+                {item.label}
+              </a>
+            ))}
           </ul>
           <div className="mt-2">
-            <SmallButton className="w-full text-center text-sm">Contact Us</SmallButton>
+            <SmallButton className="w-full text-center text-sm">
+              Contact Us
+            </SmallButton>
           </div>
         </div>
       )}

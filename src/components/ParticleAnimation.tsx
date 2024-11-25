@@ -92,7 +92,7 @@ const ParticleAnimation: React.FC<ParticleAnimationProps> = ({
       style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 2.5 }}
+      transition={{ duration: 4 }}
     >
       <canvas ref={canvasRef} style={{ display: "block" }} />
     </motion.div>

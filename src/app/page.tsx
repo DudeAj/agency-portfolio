@@ -39,6 +39,7 @@ function App() {
       <WhyAriseStandsOut />
       <WhyUsSection
         data={{
+          id:'design',
           tag: "Process",
           heading: "Our Design Process",
           description:
@@ -73,6 +74,7 @@ function App() {
       />
       <WhyUsSection
         data={{
+          id:'works',
           tag: "Works",
           heading: "Explore Our Recent Projects",
           description:
@@ -115,6 +117,7 @@ function App() {
       <ComparisonSection />
       <WhyUsSection
         data={{
+          id:'services',
           tag: "Services",
           heading: "Explore Our Core Services",
           description:
@@ -127,6 +130,7 @@ function App() {
       <WebDesignContainer />
       <WhyUsSection
         data={{
+          id:'pricing',
           tag: "Pricing",
           heading: "Transparent Pricing Options",
           description:

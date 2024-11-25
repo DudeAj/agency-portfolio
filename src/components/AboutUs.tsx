@@ -20,7 +20,8 @@ const AboutUs: React.FC = () => {
   ];
 
   return (
-    <section className="flex justify-center mt-32">
+    
+    <section id="about" className="flex justify-center mt-32">
       <div className="flex flex-col lg:flex-row w-10/12 md:w-10/12 gap-5">
         <div className="flex flex-col w-full lg:w-6/12 ">
           <img
